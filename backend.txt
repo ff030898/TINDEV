@@ -1,0 +1,44 @@
+mkdir backend
+cd backend
+
+yarn init -y
+//criar o arquivo package.json
+
+yarn add express
+//express ajuda a trabalhar com rotas e requisições e criar o arquivo
+yarn.lock que criar infromações das dependencias das dependencias e 
+a pasta node_modules
+
+criar pastar src na raiz
+
+dentro da pasta src criar o arquivo server.js
+
+express é uma função que quando chamada ela cria um novo servidor uma nova porta que 
+recebe requisiçoes e retorna
+
+const express = require('express'); // importando express
+const serve = express();
+
+serve.get('/', (req, res) => {
+    
+    return res.send('Hello World');
+});
+serve.listen(3000);
+
+node src/server.js
+//comando para rodar o servidor
+
+yarn add nodemon -D
+//criar script com caminho do servidor para salvar e atualizar codigo
+
+yarn add mongoose
+//para usar o banco de dados é uma ferramenta que facilitar 
+usar o banco de dados usando javascript sem precisar escrever as query igual 
+é no banco mysql por exemplo "insert into"
+
+yarn add axios
+requisições da api - abstrair informações da API
+
+no final
+yarn add cors
+//permite ser acessado para requisições

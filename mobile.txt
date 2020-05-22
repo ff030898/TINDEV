@@ -1,0 +1,11 @@
+npm install -g react-native-cli
+npx react-native init nome_do_projeto
+react-native run-android
+
+yarn add react-navigation react-native-gesture-handler react-native-reanimated
+yarn add axios
+//colocar localhost como caminho
+adb reverse tcp:3333 tcp:3333
+//salvar dados no input usuario entra uma vez e já fica salvo
+yarn add @react-native-community/async-storage
+
